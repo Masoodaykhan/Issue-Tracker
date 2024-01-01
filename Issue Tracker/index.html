@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <header>
+    <h1>Issue Tracker</h1>
+    <button id="addIssueBtn">Add Issue</button>
+  </header>
+<div>
+  <main id="issueList">
+    <!-- Display issues here -->
+  </main>
+</div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add/Edit Issue</h2>
+      <form id="issueForm">
+        <label for="User Name">User Name:</label>
+        <input type="text" id="User Name" required>
+        <label for="Issue Title">Issue Title</label>
+        <textarea id="issueTitle" required></textarea>
+        <label for="Issue Description">Issue Description</label>
+        <textarea id="issueDescription" required></textarea>
+        <input type="submit" value="Save Issue">
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
